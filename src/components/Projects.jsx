@@ -31,7 +31,7 @@ const projects = [
 
 function Projects() {
   return (
-    <section id="projects" className="section projects-section">
+    <section id="projects" className="section projects-section" data-alt>
       <div className="container">
         <h2 className="section-title">Work highlights</h2>
         <div className="projects-list">

@@ -19,7 +19,7 @@ const skillGroups = [
 
 function Skills() {
   return (
-    <section id="skills" className="section skills-section">
+    <section id="skills" className="section skills-section" data-alt>
       <div className="container">
         <h2 className="section-title">Skills</h2>
         <div className="skills-grid">

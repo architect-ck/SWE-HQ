@@ -18,7 +18,7 @@ const achievements = [
 
 function Certifications() {
   return (
-    <section id="certifications" className="section certifications-section">
+    <section id="certifications" className="section certifications-section" data-alt>
       <div className="container">
         <h2 className="section-title">Certifications & Achievements</h2>
         <div className="certs-achievements">
