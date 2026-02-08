@@ -8,6 +8,7 @@ import Education from './components/Education'
 import Skills from './components/Skills'
 import SWEHQ from './components/SWEHQ'
 import Certifications from './components/Certifications'
+import Achievements from './components/Achievements'
 import Contact from './components/Contact'
 
 function App() {
@@ -35,6 +36,7 @@ function App() {
         <Skills />
         <SWEHQ />
         <Certifications />
+        <Achievements />
         <Contact />
       </main>
     </>

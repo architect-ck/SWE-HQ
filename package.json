@@ -7,7 +7,9 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "deploy": "vite build && gh-pages -d dist"
+    "fetch-videos": "node scripts/fetch-swe-hq-videos.js",
+    "prebuild": "node scripts/fetch-swe-hq-videos.js",
+    "deploy": "npm run fetch-videos && vite build && gh-pages -d dist"
   },
   "dependencies": {
     "react": "^18.3.1",

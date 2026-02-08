@@ -11,37 +11,19 @@ const certs = [
   },
 ]
 
-const achievements = [
-  'Secured 98.82 percentile in GATE-CS (2021).',
-  'Secured 2nd position in CodeRex coding competition at Agresita, SSIPMT (2019).',
-]
-
 function Certifications() {
   return (
     <section id="certifications" className="section certifications-section" data-alt>
       <div className="container">
-        <h2 className="section-title">Certifications & Achievements</h2>
-        <div className="certs-achievements">
-          <div className="certs-block">
-            <h3 className="subsection-title">Certifications</h3>
-            <ul className="certs-list">
-              {certs.map((c, i) => (
-                <li key={i}>
-                  <a href={c.url} target="_blank" rel="noopener noreferrer">{c.name}</a>
-                  <span className="cert-skills"> — {c.skills}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div className="achievements-block">
-            <h3 className="subsection-title">Achievements</h3>
-            <ul className="achievements-list">
-              {achievements.map((a, i) => (
-                <li key={i}>{a}</li>
-              ))}
-            </ul>
-          </div>
-        </div>
+        <h2 className="section-title">Certifications</h2>
+        <ul className="certs-list">
+          {certs.map((c, i) => (
+            <li key={i}>
+              <a href={c.url} target="_blank" rel="noopener noreferrer">{c.name}</a>
+              <span className="cert-skills"> — {c.skills}</span>
+            </li>
+          ))}
+        </ul>
       </div>
     </section>
   )

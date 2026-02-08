@@ -86,16 +86,19 @@ a:hover {
   margin: 0 0 0.25em;
   color: var(--text);
   letter-spacing: -0.02em;
+  display: block;
 }
 
 .section-title::after {
   content: '';
   display: block;
-  width: 48px;
+  width: 56px;
   height: 4px;
   background: var(--accent-gradient);
   border-radius: 2px;
   margin-top: 0.5rem;
+  margin-left: 0;
+  margin-right: auto;
 }
 
 .container {
@@ -557,6 +560,84 @@ a:hover {
   font-size: 1.05rem;
 }
 
+.swe-hq-loading {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+.swe-hq-error {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.swe-hq-error code {
+  font-family: var(--font-mono);
+  font-size: 0.85em;
+  padding: 0.15rem 0.4rem;
+  background: var(--surface);
+  border-radius: 4px;
+}
+
+.swe-hq-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.swe-hq-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+  color: inherit;
+  text-decoration: none;
+  display: block;
+}
+
+.swe-hq-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+  border-color: rgba(124, 58, 237, 0.2);
+  color: inherit;
+}
+
+.swe-hq-card-thumb {
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: var(--border);
+}
+
+.swe-hq-card-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swe-hq-card-title {
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin: 0;
+  padding: 0.75rem 1rem 0.25rem;
+  line-height: 1.35;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.swe-hq-card-date {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  padding: 0 1rem 0.75rem;
+}
+
 .swe-hq-embed {
   position: relative;
   width: 100%;
@@ -584,24 +665,6 @@ a:hover {
 }
 
 /* ----- Certifications ----- */
-.subsection-title {
-  font-family: var(--font-display);
-  font-size: 1rem;
-  font-weight: 700;
-  margin: 0 0 0.6rem;
-}
-
-.certs-achievements {
-  display: grid;
-  gap: 1.5rem;
-}
-
-@media (min-width: 600px) {
-  .certs-achievements {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
 .certs-list, .achievements-list {
   margin: 0;
   padding-left: 1.25rem;

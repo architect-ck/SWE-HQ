@@ -29,7 +29,19 @@ Open [http://localhost:5173](http://localhost:5173).
 npm run build
 ```
 
-Output is in `dist/`.
+Output is in `dist/`. Before building, the **SWE HQ** section can pull the latest 3–5 videos from your channel:
+
+```bash
+npm run fetch-videos
+```
+
+This uses YouTube’s public RSS feed (no API key). It runs automatically before `npm run build` via `prebuild`. If channel ID resolution fails, set it once in `.env`:
+
+```bash
+YOUTUBE_CHANNEL_ID=UCxxxxxxxxxxxxxxxxxx
+```
+
+Get your channel ID: YouTube → Your channel → About → Share channel → Copy channel ID. View counts are not available from the public feed.
 
 ## Deploy to GitHub Pages
 
