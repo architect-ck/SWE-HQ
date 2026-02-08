@@ -1,7 +1,19 @@
+const PROFILE_IMAGE = `${import.meta.env.BASE_URL}profile.png`
+
 function Hero() {
   return (
     <section id="home" className="section hero-section">
       <div className="container hero-inner">
+        <div className="hero-avatar-wrap reveal">
+          <img
+            src={PROFILE_IMAGE}
+            alt="Chandrakant Sahu"
+            className="hero-avatar"
+            width={160}
+            height={160}
+            fetchPriority="high"
+          />
+        </div>
         <span className="hero-badge reveal">Software Engineer · PayU · IIIT-B</span>
         <h1 className="hero-name reveal reveal-delay-1">
           Hi, I'm <span className="gradient-text">Chandrakant Sahu</span>
