@@ -1,9 +1,8 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// GitHub Pages: chandrakant.github.io (user/org site) uses base '/'.
-// For a project site like username.github.io/repo use base '/repo/'.
-const base = '/'
+// GitHub Pages: base '/' for chandrakant.github.io; '/SWE-HQ/' for architect-ck.github.io/SWE-HQ
+const base = process.env.GITHUB_PAGES === 'true' ? '/SWE-HQ/' : '/'
 
 export default defineConfig({
   plugins: [react()],

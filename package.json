@@ -9,7 +9,8 @@
     "preview": "vite preview",
     "fetch-videos": "node scripts/fetch-swe-hq-videos.js",
     "prebuild": "node scripts/fetch-swe-hq-videos.js",
-    "deploy": "npm run fetch-videos && vite build && gh-pages -d dist -r https://github.com/chandrakant/chandrakant.github.io.git"
+    "deploy": "npm run fetch-videos && vite build && gh-pages -d dist -r https://github.com/chandrakant/chandrakant.github.io.git",
+    "deploy:swe-hq": "npm run fetch-videos && GITHUB_PAGES=true vite build && gh-pages -d dist"
   },
   "dependencies": {
     "react": "^18.3.1",
