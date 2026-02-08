@@ -1,6 +1,7 @@
 const email = 'chandrakantiiitb@gmail.com'
 const phone = '+91 9098669007'
 const linkedIn = 'https://linkedin.com/in/chandrakantsahu'
+const github = 'https://github.com/ChandrakantSahu17'
 const youTube = 'https://youtube.com/@swe_hq'
 const leetCode = 'https://leetcode.com/ck_17/'
 const hackerRank = 'https://www.hackerrank.com/_ck_17_'
@@ -23,6 +24,10 @@ function Contact() {
           <a href={linkedIn} target="_blank" rel="noopener noreferrer" className="contact-item">
             <span className="contact-label">LinkedIn</span>
             <span className="contact-value">linkedin.com/in/chandrakantsahu</span>
+          </a>
+          <a href={github} target="_blank" rel="noopener noreferrer" className="contact-item">
+            <span className="contact-label">GitHub</span>
+            <span className="contact-value">github.com/ChandrakantSahu17</span>
           </a>
           <a href={youTube} target="_blank" rel="noopener noreferrer" className="contact-item">
             <span className="contact-label">YouTube (SWE HQ)</span>
